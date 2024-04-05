@@ -19,6 +19,7 @@ private:
     Ui::Widget *ui;
 
 public slots:
-    void test();
+    void buttonPressed();
+    void buttonGerer();
 };
 #endif // WIDGET_H

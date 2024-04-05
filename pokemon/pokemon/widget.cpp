@@ -45,6 +45,7 @@ Widget::Widget(QWidget *parent)
         ui->tableView_6->setAlternatingRowColors(true);
 
     }
+    ui->logo->setPixmap(QPixmap("pokemon.png"));
 }
 
 Widget::~Widget()
@@ -52,7 +53,7 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::test()
+void Widget::buttonPressed()
 {
 
     ui->test_img->setPixmap(QPixmap("test.png"));
@@ -71,6 +72,11 @@ void Widget::test()
     {
         ui->stackedWidget->setCurrentIndex(0);
     }
+
+}
+
+void Widget::buttonGerer()
+{
 
 }
 
