@@ -69,19 +69,19 @@ public:
     QLabel *label_18;
     QLabel *label_16;
     QPushButton *pushButton_10;
-    QComboBox *comboBox;
+    QComboBox *dresseurs1;
     QLabel *label_4;
     QFrame *line_3;
     QLabel *label_13;
     QLabel *label_8;
     QFrame *line_2;
-    QTableView *tableView_4;
+    QTableView *pc1;
     QLabel *label_7;
     QFrame *line_5;
     QLabel *label_10;
     QPushButton *pushButton_5;
     QLabel *label_17;
-    QComboBox *comboBox_2;
+    QComboBox *dresseurs2;
     QPushButton *menu_4;
     QPushButton *pushButton;
     QFrame *line;
@@ -90,20 +90,20 @@ public:
     QLabel *label_2;
     QFrame *line_7;
     QLabel *label_12;
-    QTableView *tableView_5;
+    QTableView *hh1;
     QFrame *line_6;
     QLabel *label_9;
     QLabel *label_14;
-    QTableView *tableView;
-    QTableView *tableView_2;
+    QTableView *equipe1;
+    QTableView *pc2;
     QLabel *label_5;
     QPushButton *pushButton_6;
-    QTableView *tableView_3;
+    QTableView *equipe2;
     QLabel *label_19;
     QPushButton *pushButton_8;
     QLabel *label_11;
     QPushButton *pushButton_2;
-    QTableView *tableView_6;
+    QTableView *hh2;
 
     void setupUi(QMainWindow *Widget)
     {
@@ -312,12 +312,12 @@ public:
 
         gridLayout->addWidget(pushButton_10, 12, 7, 1, 1);
 
-        comboBox = new QComboBox(gridLayoutWidget);
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->setObjectName("comboBox");
+        dresseurs1 = new QComboBox(gridLayoutWidget);
+        dresseurs1->addItem(QString());
+        dresseurs1->addItem(QString());
+        dresseurs1->setObjectName("dresseurs1");
 
-        gridLayout->addWidget(comboBox, 2, 3, 1, 3);
+        gridLayout->addWidget(dresseurs1, 2, 3, 1, 3);
 
         label_4 = new QLabel(gridLayoutWidget);
         label_4->setObjectName("label_4");
@@ -348,10 +348,10 @@ public:
 
         gridLayout->addWidget(line_2, 7, 0, 1, 6);
 
-        tableView_4 = new QTableView(gridLayoutWidget);
-        tableView_4->setObjectName("tableView_4");
+        pc1 = new QTableView(gridLayoutWidget);
+        pc1->setObjectName("pc1");
 
-        gridLayout->addWidget(tableView_4, 9, 0, 1, 2);
+        gridLayout->addWidget(pc1, 9, 0, 1, 2);
 
         label_7 = new QLabel(gridLayoutWidget);
         label_7->setObjectName("label_7");
@@ -380,12 +380,12 @@ public:
 
         gridLayout->addWidget(label_17, 8, 0, 1, 2);
 
-        comboBox_2 = new QComboBox(gridLayoutWidget);
-        comboBox_2->addItem(QString());
-        comboBox_2->addItem(QString());
-        comboBox_2->setObjectName("comboBox_2");
+        dresseurs2 = new QComboBox(gridLayoutWidget);
+        dresseurs2->addItem(QString());
+        dresseurs2->addItem(QString());
+        dresseurs2->setObjectName("dresseurs2");
 
-        gridLayout->addWidget(comboBox_2, 2, 10, 1, 3);
+        gridLayout->addWidget(dresseurs2, 2, 10, 1, 3);
 
         menu_4 = new QPushButton(gridLayoutWidget);
         menu_4->setObjectName("menu_4");
@@ -435,15 +435,15 @@ public:
 
         gridLayout->addWidget(label_12, 2, 8, 1, 1);
 
-        tableView_5 = new QTableView(gridLayoutWidget);
-        tableView_5->setObjectName("tableView_5");
+        hh1 = new QTableView(gridLayoutWidget);
+        hh1->setObjectName("hh1");
         QFont font2;
         font2.setPointSize(9);
-        tableView_5->setFont(font2);
-        tableView_5->setAlternatingRowColors(true);
-        tableView_5->setSortingEnabled(false);
+        hh1->setFont(font2);
+        hh1->setAlternatingRowColors(true);
+        hh1->setSortingEnabled(false);
 
-        gridLayout->addWidget(tableView_5, 5, 0, 1, 6);
+        gridLayout->addWidget(hh1, 5, 0, 1, 6);
 
         line_6 = new QFrame(gridLayoutWidget);
         line_6->setObjectName("line_6");
@@ -463,15 +463,15 @@ public:
 
         gridLayout->addWidget(label_14, 4, 7, 1, 2);
 
-        tableView = new QTableView(gridLayoutWidget);
-        tableView->setObjectName("tableView");
+        equipe1 = new QTableView(gridLayoutWidget);
+        equipe1->setObjectName("equipe1");
 
-        gridLayout->addWidget(tableView, 9, 3, 1, 3);
+        gridLayout->addWidget(equipe1, 9, 3, 1, 3);
 
-        tableView_2 = new QTableView(gridLayoutWidget);
-        tableView_2->setObjectName("tableView_2");
+        pc2 = new QTableView(gridLayoutWidget);
+        pc2->setObjectName("pc2");
 
-        gridLayout->addWidget(tableView_2, 9, 7, 1, 2);
+        gridLayout->addWidget(pc2, 9, 7, 1, 2);
 
         label_5 = new QLabel(gridLayoutWidget);
         label_5->setObjectName("label_5");
@@ -483,10 +483,10 @@ public:
 
         gridLayout->addWidget(pushButton_6, 10, 8, 1, 1);
 
-        tableView_3 = new QTableView(gridLayoutWidget);
-        tableView_3->setObjectName("tableView_3");
+        equipe2 = new QTableView(gridLayoutWidget);
+        equipe2->setObjectName("equipe2");
 
-        gridLayout->addWidget(tableView_3, 9, 11, 1, 2);
+        gridLayout->addWidget(equipe2, 9, 11, 1, 2);
 
         label_19 = new QLabel(gridLayoutWidget);
         label_19->setObjectName("label_19");
@@ -509,12 +509,12 @@ public:
 
         gridLayout->addWidget(pushButton_2, 4, 11, 1, 2);
 
-        tableView_6 = new QTableView(gridLayoutWidget);
-        tableView_6->setObjectName("tableView_6");
-        tableView_6->setAlternatingRowColors(false);
-        tableView_6->setSortingEnabled(false);
+        hh2 = new QTableView(gridLayoutWidget);
+        hh2->setObjectName("hh2");
+        hh2->setAlternatingRowColors(false);
+        hh2->setSortingEnabled(false);
 
-        gridLayout->addWidget(tableView_6, 5, 7, 1, 6);
+        gridLayout->addWidget(hh2, 5, 7, 1, 6);
 
         stackedWidget->addWidget(gerer_2);
         Widget->setCentralWidget(centralwidget);
@@ -559,8 +559,8 @@ public:
         label_18->setText(QCoreApplication::translate("Widget", "Boite PC", nullptr));
         label_16->setText(QCoreApplication::translate("Widget", "Mon \303\251quipe", nullptr));
         pushButton_10->setText(QCoreApplication::translate("Widget", "Sauvegarder", nullptr));
-        comboBox->setItemText(0, QCoreApplication::translate("Widget", "kigfr\"de", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("Widget", "efgsgs", nullptr));
+        dresseurs1->setItemText(0, QCoreApplication::translate("Widget", "kigfr\"de", nullptr));
+        dresseurs1->setItemText(1, QCoreApplication::translate("Widget", "efgsgs", nullptr));
 
         label_4->setText(QCoreApplication::translate("Widget", "Dresseur", nullptr));
         label_13->setText(QCoreApplication::translate("Widget", "Hautes herbes", nullptr));
@@ -569,8 +569,8 @@ public:
         label_10->setText(QCoreApplication::translate("Widget", "Nb points", nullptr));
         pushButton_5->setText(QCoreApplication::translate("Widget", "Gu\303\251rir", nullptr));
         label_17->setText(QCoreApplication::translate("Widget", "Boite PC", nullptr));
-        comboBox_2->setItemText(0, QCoreApplication::translate("Widget", "a", nullptr));
-        comboBox_2->setItemText(1, QCoreApplication::translate("Widget", "b", nullptr));
+        dresseurs2->setItemText(0, QCoreApplication::translate("Widget", "a", nullptr));
+        dresseurs2->setItemText(1, QCoreApplication::translate("Widget", "b", nullptr));
 
         menu_4->setText(QCoreApplication::translate("Widget", "Quitter", nullptr));
         pushButton->setText(QCoreApplication::translate("Widget", "Capture", nullptr));

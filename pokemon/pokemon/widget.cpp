@@ -29,21 +29,48 @@ Widget::Widget(QWidget *parent)
             QString nom = query.value(query.record().indexOf("nom")).toString();
             qDebug() << "PK : " <<nom;
         }
-        QSqlTableModel *model;
+
+        QSqlTableModel *pokedex;
+        QSqlTableModel *boitepc;
+        QSqlTableModel *equipes;
+        QSqlTableModel *dresseurs;
         QSqlDatabase db;
 
-        model=new QSqlTableModel(0, db);
-        model->setTable("pokemon");
-        model->setEditStrategy(QSqlTableModel::OnManualSubmit);
-        model->select();
-        model->setHeaderData(0, Qt::Horizontal, tr("Name"));
+        pokedex=new QSqlTableModel(0, db);
+        boitepc=new QSqlTableModel(0, db);
+        equipes=new QSqlTableModel(0, db);
+        dresseurs=new QSqlTableModel(0, db);
 
-        ui->tableView_5->setModel(model);
-        ui->tableView_5->setAlternatingRowColors(true);
+        pokedex->setTable("pokemon");
+        pokedex->setEditStrategy(QSqlTableModel::OnManualSubmit);
+        pokedex->select();
+        pokedex->setHeaderData(0, Qt::Horizontal, tr("Nom"));
 
-        ui->tableView_6->setModel(model);
-        ui->tableView_6->setAlternatingRowColors(true);
+        boitepc->setTable("boitepc");
+        boitepc->setEditStrategy(QSqlTableModel::OnManualSubmit);
+        boitepc->select();
+        boitepc->setHeaderData(0, Qt::Horizontal, tr("Name"));
 
+        equipes->setTable("equipes");
+        equipes->setEditStrategy(QSqlTableModel::OnManualSubmit);
+        equipes->select();
+        equipes->setHeaderData(0, Qt::Horizontal, tr("Name"));
+
+        dresseurs->setTable("dresseurs");
+        dresseurs->setEditStrategy(QSqlTableModel::OnManualSubmit);
+        dresseurs->select();
+        dresseurs->setHeaderData(1, Qt::Horizontal, tr("nom"));
+
+
+        ui->hh1->setModel(pokedex);
+        ui->hh1->hideColumn(0);
+        ui->hh1->setAlternatingRowColors(true);
+        ui->hh2->setModel(pokedex);
+        ui->hh2->hideColumn(0);
+        ui->hh2->setAlternatingRowColors(true);
+
+        ui->dresseurs1->setModel(dresseurs);
+        ui->dresseurs2->setModel(dresseurs);
     }
 }
 

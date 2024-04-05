@@ -379,7 +379,7 @@
         </widget>
        </item>
        <item row="2" column="3" colspan="3">
-        <widget class="QComboBox" name="comboBox">
+        <widget class="QComboBox" name="dresseurs1">
          <item>
           <property name="text">
            <string>kigfr&quot;de</string>
@@ -428,7 +428,7 @@
         </widget>
        </item>
        <item row="9" column="0" colspan="2">
-        <widget class="QTableView" name="tableView_4"/>
+        <widget class="QTableView" name="pc1"/>
        </item>
        <item row="3" column="5">
         <widget class="QLabel" name="label_7">
@@ -466,7 +466,7 @@
         </widget>
        </item>
        <item row="2" column="10" colspan="3">
-        <widget class="QComboBox" name="comboBox_2">
+        <widget class="QComboBox" name="dresseurs2">
          <item>
           <property name="text">
            <string>a</string>
@@ -551,7 +551,7 @@
         </widget>
        </item>
        <item row="5" column="0" colspan="6">
-        <widget class="QTableView" name="tableView_5">
+        <widget class="QTableView" name="hh1">
          <property name="font">
           <font>
            <pointsize>9</pointsize>
@@ -590,10 +590,10 @@
         </widget>
        </item>
        <item row="9" column="3" colspan="3">
-        <widget class="QTableView" name="tableView"/>
+        <widget class="QTableView" name="equipe1"/>
        </item>
        <item row="9" column="7" colspan="2">
-        <widget class="QTableView" name="tableView_2"/>
+        <widget class="QTableView" name="pc2"/>
        </item>
        <item row="3" column="4">
         <widget class="QLabel" name="label_5">
@@ -610,7 +610,7 @@
         </widget>
        </item>
        <item row="9" column="11" colspan="2">
-        <widget class="QTableView" name="tableView_3"/>
+        <widget class="QTableView" name="equipe2"/>
        </item>
        <item row="8" column="10" colspan="3">
         <widget class="QLabel" name="label_19">
@@ -644,7 +644,7 @@
         </widget>
        </item>
        <item row="5" column="7" colspan="6">
-        <widget class="QTableView" name="tableView_6">
+        <widget class="QTableView" name="hh2">
          <property name="alternatingRowColors">
           <bool>false</bool>
          </property>
