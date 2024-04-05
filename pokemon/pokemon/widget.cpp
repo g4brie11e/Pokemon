@@ -69,8 +69,14 @@ Widget::Widget(QWidget *parent)
         ui->hh2->hideColumn(0);
         ui->hh2->setAlternatingRowColors(true);
 
-        ui->dresseurs1->setModel(dresseurs);
-        ui->dresseurs2->setModel(dresseurs);
+        for (int i =0; i<dresseurs->rowCount(); i++)
+        {
+            ui->dresseurs1->addItem(dresseurs->record(i).value(1).toString());;
+        }
+        for (int i =0; i<dresseurs->rowCount(); i++)
+        {
+            ui->dresseurs2->addItem(dresseurs->record(i).value(1).toString());;
+        }
     }
 }
 

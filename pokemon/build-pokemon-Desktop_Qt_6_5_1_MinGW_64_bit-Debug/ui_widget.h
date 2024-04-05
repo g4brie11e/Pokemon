@@ -313,8 +313,6 @@ public:
         gridLayout->addWidget(pushButton_10, 12, 7, 1, 1);
 
         dresseurs1 = new QComboBox(gridLayoutWidget);
-        dresseurs1->addItem(QString());
-        dresseurs1->addItem(QString());
         dresseurs1->setObjectName("dresseurs1");
 
         gridLayout->addWidget(dresseurs1, 2, 3, 1, 3);
@@ -381,8 +379,6 @@ public:
         gridLayout->addWidget(label_17, 8, 0, 1, 2);
 
         dresseurs2 = new QComboBox(gridLayoutWidget);
-        dresseurs2->addItem(QString());
-        dresseurs2->addItem(QString());
         dresseurs2->setObjectName("dresseurs2");
 
         gridLayout->addWidget(dresseurs2, 2, 10, 1, 3);
@@ -559,9 +555,6 @@ public:
         label_18->setText(QCoreApplication::translate("Widget", "Boite PC", nullptr));
         label_16->setText(QCoreApplication::translate("Widget", "Mon \303\251quipe", nullptr));
         pushButton_10->setText(QCoreApplication::translate("Widget", "Sauvegarder", nullptr));
-        dresseurs1->setItemText(0, QCoreApplication::translate("Widget", "kigfr\"de", nullptr));
-        dresseurs1->setItemText(1, QCoreApplication::translate("Widget", "efgsgs", nullptr));
-
         label_4->setText(QCoreApplication::translate("Widget", "Dresseur", nullptr));
         label_13->setText(QCoreApplication::translate("Widget", "Hautes herbes", nullptr));
         label_8->setText(QCoreApplication::translate("Widget", "Niveau:", nullptr));
@@ -569,9 +562,6 @@ public:
         label_10->setText(QCoreApplication::translate("Widget", "Nb points", nullptr));
         pushButton_5->setText(QCoreApplication::translate("Widget", "Gu\303\251rir", nullptr));
         label_17->setText(QCoreApplication::translate("Widget", "Boite PC", nullptr));
-        dresseurs2->setItemText(0, QCoreApplication::translate("Widget", "a", nullptr));
-        dresseurs2->setItemText(1, QCoreApplication::translate("Widget", "b", nullptr));
-
         menu_4->setText(QCoreApplication::translate("Widget", "Quitter", nullptr));
         pushButton->setText(QCoreApplication::translate("Widget", "Capture", nullptr));
         label_6->setText(QCoreApplication::translate("Widget", "1", nullptr));
