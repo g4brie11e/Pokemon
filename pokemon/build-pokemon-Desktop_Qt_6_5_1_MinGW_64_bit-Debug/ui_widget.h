@@ -109,12 +109,12 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(842, 520);
+        Widget->resize(842, 663);
         centralwidget = new QWidget(Widget);
         centralwidget->setObjectName("centralwidget");
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
-        stackedWidget->setGeometry(QRect(10, 10, 821, 501));
+        stackedWidget->setGeometry(QRect(10, 10, 821, 561));
         menu = new QWidget();
         menu->setObjectName("menu");
         gridLayoutWidget_3 = new QWidget(menu);
@@ -269,7 +269,7 @@ public:
         gerer_2->setObjectName("gerer_2");
         gridLayoutWidget = new QWidget(gerer_2);
         gridLayoutWidget->setObjectName("gridLayoutWidget");
-        gridLayoutWidget->setGeometry(QRect(70, 50, 714, 430));
+        gridLayoutWidget->setGeometry(QRect(70, 40, 714, 511));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -437,7 +437,10 @@ public:
 
         tableView_5 = new QTableView(gridLayoutWidget);
         tableView_5->setObjectName("tableView_5");
-        tableView_5->setAlternatingRowColors(false);
+        QFont font2;
+        font2.setPointSize(9);
+        tableView_5->setFont(font2);
+        tableView_5->setAlternatingRowColors(true);
         tableView_5->setSortingEnabled(false);
 
         gridLayout->addWidget(tableView_5, 5, 0, 1, 6);
